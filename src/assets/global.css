@@ -28,15 +28,15 @@ TABLE CONTENT
 ***/
 @import url(https://fonts.bunny.net/css?family=lato:400,700,900|quicksand:400,500,600,700);
 /*import vendors*/
-/* @import url(normalize.css);
-@import url(bootstrap.rtl.min.css);
-@import url(uicons-regular-straight.css); */
+ @import url(normalize.css);
+/*@import url(bootstrap.rtl.min.css); */
+@import url(uicons-regular-straight.css);  
 /*import plugins*/
 /* @import url(magnific-popup.css);
 @import url(select2.min.css);
 @import url(slick.css);
-@import url(perfect-scrollbar.css); */
-/*RESET*/
+@import url(perfect-scrollbar.css);  */
+/* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,6 +57,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 
 thead {
   font-weight: 600;
@@ -602,7 +603,7 @@ h4 {
   display: inline-block;
   -webkit-animation: spinner 1.2s infinite ease-in-out;
   animation: spinner 1.2s infinite ease-in-out;
-  background: url(../fonts/favicon_1.svg);
+  background: url(/public/fonts/favicon_1.svg);
   -webkit-box-shadow: 0 0 10px #fff;
           box-shadow: 0 0 10px #fff;
 }
@@ -891,7 +892,7 @@ h5.widget-title {
 }
 
 .title.style-3 {
-  background-image: url(../images/wave.png);
+  background-image: url(/public/images/wave.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   padding-bottom: 25px;
@@ -1178,15 +1179,15 @@ button.submit:hover, button[type='submit']:hover {
 }
 
 .btn.btn-brush.btn-brush-1, .button.btn-brush.btn-brush-1 {
-  background-image: url(../images/btn-brush-bg-1.png);
+  background-image: url(/public/images/btn-brush-bg-1.png);
 }
 
 .btn.btn-brush.btn-brush-2, .button.btn-brush.btn-brush-2 {
-  background-image: url(../images/btn-brush-bg-2.png);
+  background-image: url(/public/images/btn-brush-bg-2.png);
 }
 
 .btn.btn-brush.btn-brush-3, .button.btn-brush.btn-brush-3 {
-  background-image: url(../images/btn-brush-bg-3.png);
+  background-image: url(/public/images/btn-brush-bg-3.png);
 }
 
 .comments-area .btn-reply {
@@ -1861,6 +1862,7 @@ label {
 }
 
 .hero-slider-1 .single-hero-slider {
+  background-image: url("/public/images/slider-1.png");
   height: 538px;
   border-radius: 30px;
   background-size: cover;
@@ -1911,7 +1913,7 @@ label {
   border: 0;
   border-radius: 50px 0 0 50px;
   padding-left: 58px;
-  background: url(../images/icon-plane.png) no-repeat 25px center;
+  background: url(/public/images/icon-plane.png) no-repeat 25px center;
 }
 
 .hero-slider-1 .slider-content form button {
@@ -2172,6 +2174,8 @@ label {
 .carausel-10-columns-cover .carausel-10-columns {
   overflow: hidden;
   margin: 0 -12px;
+  display: flex;
+  /* comment for alter */
 }
 
 .carausel-10-columns-cover .carausel-10-columns .card-2 {
@@ -2182,6 +2186,8 @@ label {
 .carausel-4-columns-cover .carausel-4-columns {
   overflow: hidden;
   margin: 0 -12px;
+  display: flex;
+  /* comment for alter */
 }
 
 .carausel-4-columns-cover .carausel-4-columns .product-cart-wrap {
@@ -2221,7 +2227,7 @@ label {
 }
 
 .home-slider.style-2 {
-  background: url(../images/banner-12.png) no-repeat center bottom;
+  background: url(/public/images/banner-12.png) no-repeat center bottom;
   background-size: cover;
   width: 100%;
   padding: 50px 0;
@@ -3417,6 +3423,8 @@ table .product-thumbnail img {
 
 .banner-img img {
   border-radius: 10px;
+  transform: scaleX(-1);
+  /* Alteration */
 }
 
 .banner-img:hover img {
@@ -3479,7 +3487,7 @@ table .product-thumbnail img {
   border-radius: 15px;
   overflow: hidden;
   height: 520px;
-  background: url(../images/banner-4.png) no-repeat center bottom;
+  background: url(/public/images/banner-4.png) no-repeat center bottom;
   background-size: cover;
   width: 100%;
 }
@@ -3494,7 +3502,7 @@ table .product-thumbnail img {
   border-radius: 15px;
   overflow: hidden;
   height: 538px;
-  background: url(../images/banner-11.png) no-repeat center bottom;
+  background: url(/public/images/banner-11.png) no-repeat center bottom;
   background-size: cover;
   width: 100%;
 }
@@ -3685,7 +3693,7 @@ table .product-thumbnail img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../images/home-6-bg.jpg) no-repeat center center;
+  background: url(/public/images/home-6-bg.jpg) no-repeat center center;
   background-size: cover;
   height: 330px;
 }
@@ -3702,7 +3710,7 @@ table .product-thumbnail img {
   border: 0;
   border-radius: 50px 0 0 50px;
   padding-left: 58px;
-  background: url(../images/icon-search.png) no-repeat 25px center;
+  background: url(/public/images/icon-search.png) no-repeat 25px center;
 }
 
 .hero-3 form button {
@@ -3806,7 +3814,7 @@ table .product-thumbnail img {
   z-index: 100;
   position: relative;
   color: #fff;
-  background: url(../images/about-9.png) no-repeat center center;
+  background: url(/public/images/about-9.png) no-repeat center center;
   border-radius: 15px;
   padding: 100px 0;
   overflow: hidden;
@@ -4957,7 +4965,7 @@ table .product-thumbnail img {
 }
 
 .product-rate {
-  background-image: url("../images/rating-stars.png");
+  background-image: url(/public/images/rating-stars.png);
   background-position: 0 -12px;
   background-repeat: repeat-x;
   height: 12px;
@@ -4969,7 +4977,7 @@ table .product-thumbnail img {
 .product-rating {
   height: 12px;
   background-repeat: repeat-x;
-  background-image: url("../images/rating-stars.png");
+  background-image: url(/public/images/rating-stars.png);
   background-position: 0 0;
 }
 
@@ -5649,7 +5657,7 @@ table.no-border td, table.no-border th, table.no-border thead {
 .apply-coupon input {
   height: 51px;
   border-radius: 10px 0 0 10px;
-  background-image: url("../images/coupon.png");
+  background-image: url("/public/images/coupon.png");
   background-position: 20px center;
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -5691,7 +5699,7 @@ table.no-border td, table.no-border th, table.no-border thead {
 
 /*BLOG*/
 .archive-header {
-  background: url(../images/header-bg.png) no-repeat center center;
+  background: url(/public/images/header-bg.png) no-repeat center center;
   border-radius: 20px;
   padding: 70px 80px;
   background-size: cover;
@@ -6627,7 +6635,7 @@ h6.post-title {
 }
 
 .invoice-1 .invoice-header {
-  background: rgba(0, 0, 0, 0.04) url(../images/header-bg-1.png) top left repeat;
+  background: rgba(0, 0, 0, 0.04) url(/public/images/header-bg-1.png) top left repeat;
 }
 
 .invoice-2 .invoice-info {
@@ -6639,7 +6647,7 @@ h6.post-title {
 }
 
 .invoice-3 .invoice-header {
-  background: url(../images/header-bg-2.jpg) top left no-repeat;
+  background: url(/public/images/header-bg-2.jpg) top left no-repeat;
   background-size: cover;
   padding: 50px 150px;
   color: #fff;
@@ -7598,7 +7606,7 @@ h6.post-title {
   width: 100%;
   max-width: 683px;
   font-size: 14px;
-  background-image: url(../images/search.png);
+  background-image: url(/public/images/search.png);
   background-repeat: no-repeat;
   background-position: center right;
   padding-left: 0;
@@ -8180,8 +8188,11 @@ h6.post-title {
 }
 
 .hotline img {
-  min-width: 35px;
+  min-width: 10px;
+  max-width: 30px;
   margin-right: 12px;
+  transform: scaleX(-1);
+  /* comment for alter */
 }
 
 .hotline p {
@@ -8315,7 +8326,7 @@ h6.post-title {
 }
 
 .header-style-1 .search-location .select2-container--default .select2-selection--single .select2-selection__rendered:before {
-  font-family: uicons-regular-straight !important;
+  font-family: "uicons-regular-straight" !important;
   content: "\f1c6";
   color: #B6B6B6;
   margin-right: 7px;
@@ -9203,7 +9214,7 @@ span.fi-rs-apps {
 }
 
 .price_range {
-  background: url(../images/fillter-widget-bg.png) no-repeat right bottom;
+  background: url(/public/images/fillter-widget-bg.png) no-repeat right bottom;
   background-size: 150px;
 }
 
@@ -9539,7 +9550,7 @@ footer .mobile-social-icon h6 {
 }
 
 footer .hotline {
-  min-width: 200px;
+  min-width: 200px !important;
 }
 
 footer .hotline img {
@@ -9554,7 +9565,7 @@ footer .hotline img {
 }
 
 .newsletter .newsletter-inner {
-  background: url(../images/banner-10.png) no-repeat center;
+  background: url(/public/images/banner-10.png) no-repeat center;
   background-size: cover;
   padding: 84px 78px;
   clear: both;
@@ -9570,6 +9581,7 @@ footer .hotline img {
   right: 50px;
   bottom: 0;
   max-width: 40%;
+  transform: scaleX(-1);
 }
 
 .newsletter .newsletter-inner .newsletter-content p {
@@ -9588,7 +9600,7 @@ footer .hotline img {
   border: 0;
   border-radius: 50px 0 0 50px;
   padding-left: 58px;
-  background: url(../images/icon-plane.png) no-repeat 25px center;
+  background: url(/public/images/icon-plane.png) no-repeat 25px center;
 }
 
 .newsletter .newsletter-inner .newsletter-content form button {
@@ -11398,7 +11410,7 @@ footer .hotline img {
 }
 
 .rtl .price_range {
-  background: url(../images/fillter-widget-bg.png) no-repeat left bottom;
+  background: url(/public/images/fillter-widget-bg.png) no-repeat left bottom;
 }
 
 .rtl .contact-infor li img {
@@ -12019,6 +12031,9 @@ footer .hotline img {
 }
 
 @media (min-width: 992px) {
+  footer .hotline {
+    min-width: 200px !important;
+  }
   .col-md-1-5 {
     width: 20%;
   }
@@ -12045,22 +12060,22 @@ footer .hotline img {
 
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1610px;
+    max-width: 1610px !important;
   }
   .col-lg-1-5 {
-    width: 20%;
+    width: 20% !important;
   }
   .col-lg-2-5 {
-    width: 40%;
+    width: 40% !important;
   }
   .col-lg-3-5 {
-    width: 60%;
+    width: 60% !important;
   }
   .col-lg-4-5 {
-    width: 80%;
+    width: 80% !important;
   }
   .col-lg-5-5 {
-    width: 100%;
+    width: 100% !important;
   }
   .header-action-right {
     display: -webkit-box;
@@ -12081,6 +12096,9 @@ footer .hotline img {
   .main-menu.main-menu-padding-1 > nav > ul > li {
     padding: 0 14px;
   }
+  .container {
+    max-width: 1400px !important;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -12088,7 +12106,7 @@ footer .hotline img {
     max-width: 94%;
   }
   .hero-slider-1 .single-hero-slider {
-    height: 467px;
+    height: 467px !important;
   }
   .display-2 {
     font-size: 64px;
@@ -12114,6 +12132,9 @@ footer .hotline img {
 }
 
 @media only screen and (max-width: 1024px) {
+  /* .container {
+    max-width: 960px !important;
+  } */
   .header-style-1 .main-categori-wrap {
     margin-right: 20px;
   }
@@ -12665,4 +12686,3 @@ footer .hotline img {
     font-size: 35px;
   }
 }
-/*# sourceMappingURL=main.css.map */
